@@ -1,0 +1,55 @@
+.buttonBack:visited {
+	color: #515151;
+}
+.back {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.back * {
+	font-size: 1rem;
+	margin: 0;
+}
+.back span {
+	font-weight: 700;
+	margin-left: 0.7rem;
+	font-size: 1.5rem;
+}
+.buttonBack {
+	padding: 1rem;
+	/* border: 0.15rem solid #515151; */
+	/* border-radius: 15px; */
+	transition: 500ms;
+}
+.buttonBack:hover {
+	color: #ce181e;
+}
+img {
+	border-radius: 5px;
+}
+.map {
+	height: 500px;
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+}
+.conteiner {
+	padding: 30px 10% 30px 10%;
+}
+p {
+	text-align: justify;
+}
+.textContent {
+	padding: 0 5% 3rem 5%;
+}
+.firstInfo {
+	margin: 3rem 0 1rem;
+}
+.center {
+	display: flex;
+	justify-content: center;
+}
+h1 {
+	font-size: 3rem;
+	margin: 2rem;
+}

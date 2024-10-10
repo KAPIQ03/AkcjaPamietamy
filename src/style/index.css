@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Museo';
+	src: url('../assets/fonts/Museo-Regular-100.otf');
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../assets/fonts/Museo-Regular-300.otf');
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../assets/fonts/Museo-Regular-500.otf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../assets/fonts/Museo-Regular-700.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../assets/fonts/Museo-Regular-900.otf');
+	font-weight: 900;
+}
+
+body {
+	margin: 0;
+	font-family: 'Museo';
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #ffffff;
+	color: #515151;
+}
+
+* {
+	text-decoration: none;
+}

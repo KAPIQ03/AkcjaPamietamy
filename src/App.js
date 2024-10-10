@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import PeopleList from './component/peopleList';
+import PeopleLink from './component/peopleLink';
+import './style/App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const date = new Date();
+	let year = date.getFullYear();
+	return (
+		<div className='App'>
+			<div className='header'>
+				<div className='center'>
+					<h1>#Pamietamy{year}</h1>
+				</div>
+				<div className='center'>
+					<p>Poznaj historię harcerzy ważnych dla Starogardu Gdańskiego</p>
+				</div>
+			</div>
+			<Routes>
+				<Route path='/' element={<PeopleList />} />
+				<Route path='/:id' element={<PeopleLink />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
