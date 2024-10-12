@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HarcData } from '../constants/data';
+import { HarcData } from '../../constants/data';
 import { useParams } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-import '../style/peopleLink.css';
+import './peopleLink.css';
 
 const PeopleLink = () => {
 	const { id } = useParams();
@@ -33,7 +33,6 @@ const PeopleLink = () => {
 					src={activeHarc.location}
 					className='map'
 					title='map'
-					// loading='lazy'
 					referrerpolicy='no-referrer-when-downgrade'></iframe>
 			</div>
 		</div>

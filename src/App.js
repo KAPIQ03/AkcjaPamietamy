@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import PeopleList from './component/peopleList';
-import PeopleLink from './component/peopleLink';
-import './style/App.css';
+import { List } from './containers/List';
+import { Page } from './containers/Page';
+import './App.css';
 
 function App() {
 	const date = new Date();
@@ -18,8 +18,8 @@ function App() {
 				</div>
 			</div>
 			<Routes>
-				<Route path='/' element={<PeopleList />} />
-				<Route path='/:id' element={<PeopleLink />} />
+				<Route path='/' element={<List />} />
+				<Route path='/:id' element={<Page />} />
 			</Routes>
 		</div>
 	);

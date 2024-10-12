@@ -6,7 +6,7 @@
 	font-size: 150%;
 }
 .peopleCards {
-	margin: 0 7% 0 7%;
+	margin: 25px 2%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -40,8 +40,10 @@
 	color: #757575;
 	background: #fff;
 }
-
 #search-icon {
 	font-size: 1.5rem;
 	color: #757575;
+}
+a {
+	margin: 0;
 }

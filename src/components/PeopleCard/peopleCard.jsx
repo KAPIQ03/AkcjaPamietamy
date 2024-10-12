@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/peopleCard.css';
+import './peopleCard.css';
 
 const PeopleCard = ({ person }) => {
 	const text = person.short_description.slice(0, 500);

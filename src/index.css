@@ -1,26 +1,26 @@
 @font-face {
 	font-family: 'Museo';
-	src: url('../assets/fonts/Museo-Regular-100.otf');
+	src: url('./assets/fonts/Museo-Regular-100.otf');
 	font-weight: 100;
 }
 @font-face {
 	font-family: 'Museo';
-	src: url('../assets/fonts/Museo-Regular-300.otf');
+	src: url('./assets/fonts/Museo-Regular-300.otf');
 	font-weight: 300;
 }
 @font-face {
 	font-family: 'Museo';
-	src: url('../assets/fonts/Museo-Regular-500.otf');
+	src: url('./assets/fonts/Museo-Regular-500.otf');
 	font-weight: 500;
 }
 @font-face {
 	font-family: 'Museo';
-	src: url('../assets/fonts/Museo-Regular-700.ttf');
+	src: url('./assets/fonts/Museo-Regular-700.ttf');
 	font-weight: 700;
 }
 @font-face {
 	font-family: 'Museo';
-	src: url('../assets/fonts/Museo-Regular-900.otf');
+	src: url('./assets/fonts/Museo-Regular-900.otf');
 	font-weight: 900;
 }
 

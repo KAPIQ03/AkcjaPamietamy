@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HarcData } from '../constants/data';
+import { HarcData } from '../../constants/data';
 import { FaSearch } from 'react-icons/fa';
-import PeopleCard from './peopleCard';
-import '../style/peopleList.css';
+import PeopleCard from '../PeopleCard/peopleCard';
+import './peopleList.css';
 
 const PeopleList = () => {
 	const [input, setInput] = useState('');
@@ -26,7 +26,7 @@ const PeopleList = () => {
 				{HarcData.filter(people =>
 					people.Name.toLowerCase().includes(input.toLowerCase())
 				).map(people => (
-					<Link to={'/' + people.id}>
+					<Link to={'/' + people.id} key={people.id}>
 						<PeopleCard person={people} />
 					</Link>
 				))}

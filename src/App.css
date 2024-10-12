@@ -1,0 +1,69 @@
+.header {
+	background-color: #ce181e;
+	padding: 1rem 10% 1rem 10%;
+	color: #fff;
+	margin: 0;
+	font-size: 150%;
+}
+.header h1 {
+	font-size: 3rem;
+	margin: 2rem;
+}
+.header p {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.peopleCard img {
+		display: none;
+	}
+	.peopleCard {
+		width: 100%;
+		margin: 2rem 0;
+		height: 300px;
+	}
+	.peopleCard h2 {
+		text-align: center;
+	}
+	.peopleCards {
+		margin: 1.5rem 1rem;
+	}
+	.header {
+		font-size: 100%;
+	}
+	.header p {
+		text-align: center;
+	}
+	.header h1 {
+		padding: 0;
+		font-size: 2rem;
+		margin: 10px;
+	}
+	.headerSearchBar {
+		width: 100%;
+	}
+	.bgSearch {
+		padding: 0;
+	}
+	.search {
+		padding: 1rem 1.5rem;
+	}
+	.search input,
+	#search-icon {
+		font-size: 1.2rem;
+	}
+	.desc {
+		padding: 20px;
+		font-size: 0.8rem;
+	}
+	.conteiner h1 {
+		font-size: 2rem;
+	}
+	.back {
+		justify-content: center;
+	}
+	.textContent {
+		padding: 0;
+		margin-bottom: 3rem;
+	}
+}

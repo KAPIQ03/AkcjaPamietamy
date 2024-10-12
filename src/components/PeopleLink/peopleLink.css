@@ -17,8 +17,6 @@
 }
 .buttonBack {
 	padding: 1rem;
-	/* border: 0.15rem solid #515151; */
-	/* border-radius: 15px; */
 	transition: 500ms;
 }
 .buttonBack:hover {
@@ -49,7 +47,7 @@ p {
 	display: flex;
 	justify-content: center;
 }
-h1 {
+.firstInfo h1 {
 	font-size: 3rem;
 	margin: 2rem;
 }
