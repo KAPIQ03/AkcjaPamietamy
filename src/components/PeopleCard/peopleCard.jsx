@@ -1,18 +1,33 @@
 import React from 'react';
-import './peopleCard.css';
+import styles from './PeopleCard.module.css';
 
-const PeopleCard = ({ person }) => {
-	const text = person.short_description.slice(0, 500);
+const Image = props => {
+	return <img src={props.image} alt={props.name} />;
+};
+
+const Name = props => {
 	return (
-		<div className='peopleCard' key={person.id}>
-			<img src={person.image} alt={person.name} />
-			<div className='desc'>
-				<div className='name'>
-					<h2>{person.Name}</h2>
-				</div>
-				<div className='info'>
-					<p>{text}...</p>
-				</div>
+		<div className={styles.name}>
+			<h2>{props.Name}</h2>
+		</div>
+	);
+};
+
+const Description = props => {
+	const text = props.short_description.slice(0, 300);
+	return (
+		<div className={styles.info}>
+			<p>{text}...</p>
+		</div>
+	);
+};
+const PeopleCard = person => {
+	return (
+		<div className={styles.peopleCard} key={person.id}>
+			<Image {...person} />
+			<div className={styles.desc}>
+				<Name {...person} />
+				<Description {...person} />
 			</div>
 		</div>
 	);

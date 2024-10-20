@@ -50,4 +50,18 @@ p {
 .firstInfo h1 {
 	font-size: 3rem;
 	margin: 2rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	.conteiner h1 {
+		font-size: 2rem;
+	}
+	.back {
+		justify-content: center;
+	}
+	.textContent {
+		padding: 0;
+		margin-bottom: 3rem;
+	}
 }

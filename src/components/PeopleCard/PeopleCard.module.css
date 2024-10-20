@@ -21,7 +21,7 @@
 .desc {
 	color: #515151;
 	padding: 20px;
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 }
 .desc p {
 	margin: 5px 0;
@@ -33,4 +33,25 @@
 }
 .info {
 	text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+	.peopleCard img {
+		display: none;
+	}
+	.peopleCard {
+		width: 100%;
+		margin: 2rem 0;
+		height: 300px;
+	}
+	.peopleCard h2 {
+		text-align: center;
+	}
+	.peopleCards {
+		margin: 1.5rem 1rem;
+	}
+	.desc {
+		padding: 20px;
+		font-size: 0.8rem;
+	}
 }

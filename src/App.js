@@ -6,9 +6,10 @@ import './App.css';
 
 function App() {
 	const date = new Date();
-	let year = date.getFullYear();
+	const year = date.getFullYear();
+
 	return (
-		<div className='App'>
+		<div>
 			<div className='header'>
 				<div className='center'>
 					<h1>#Pamietamy{year}</h1>

@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HarcData } from '../../constants/data';
 import { FaSearch } from 'react-icons/fa';
-import PeopleCard from '../PeopleCard/peopleCard';
-import './peopleList.css';
+import PeopleCard from '../PeopleCard/PeopleCard';
+import styles from './PeopleList.module.css';
 
 const PeopleList = () => {
 	const [input, setInput] = useState('');
 
 	return (
 		<div>
-			<div className='bgSearch'>
-				<div className='headerSearchBar'>
-					<div className='search'>
+			<div className={styles.bgSearch}>
+				<div className={styles.headerSearchBar}>
+					<div className={styles.search}>
 						<input
 							placeholder='Wyszukaj...'
 							value={input}
@@ -22,12 +22,12 @@ const PeopleList = () => {
 					</div>
 				</div>
 			</div>
-			<div className='peopleCards'>
+			<div className={styles.peopleCards}>
 				{HarcData.filter(people =>
 					people.Name.toLowerCase().includes(input.toLowerCase())
 				).map(people => (
 					<Link to={'/' + people.id} key={people.id}>
-						<PeopleCard person={people} />
+						<PeopleCard {...people} />
 					</Link>
 				))}
 			</div>
