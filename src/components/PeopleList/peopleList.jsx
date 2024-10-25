@@ -18,7 +18,7 @@ const PeopleList = () => {
 							value={input}
 							onChange={e => setInput(e.target.value)}
 						/>
-						<FaSearch id='search-icon' />
+						<FaSearch className={styles.search_icon} />
 					</div>
 				</div>
 			</div>

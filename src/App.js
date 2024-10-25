@@ -22,6 +22,7 @@ function App() {
 				<Route path='/' element={<List />} />
 				<Route path='/:id' element={<Page />} />
 			</Routes>
+			<footer className='center footer'>Copyright © Pamiętamy {year}</footer>
 		</div>
 	);
 }

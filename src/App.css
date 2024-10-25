@@ -16,6 +16,13 @@
 	display: flex;
 	justify-content: center;
 }
+.footer {
+	border-top: 2px solid #cacaca;
+	padding: 40px;
+	margin-top: 100px;
+	font-size:120%;
+	color:#727272
+}
 
 @media screen and (max-width: 767px) {
 	.header {
@@ -29,6 +36,4 @@
 		font-size: 2rem;
 		margin: 10px;
 	}
-	
-	
 }

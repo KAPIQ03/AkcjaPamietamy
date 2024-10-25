@@ -6,9 +6,9 @@
 	background-color: #fff;
 	margin: 20px 10px 5px 10px;
 	border-radius: 5px;
+	outline: 1px solid #7575755a;
 	display: flex;
 	align-items: center;
-	box-shadow: 0px 5px 10px #2f2f2f25;
 	cursor: pointer;
 	width: 450px;
 	height: 230px;
@@ -16,7 +16,7 @@
 }
 .peopleCard:hover {
 	scale: 1.02;
-	box-shadow: 0px 15px 25px #2f2f2f50;
+	outline: 2px solid #ce181e;
 }
 .desc {
 	color: #515151;
