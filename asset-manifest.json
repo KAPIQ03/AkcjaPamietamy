@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/AkcjaPamietamy/static/css/main.ac07dbf3.css",
+    "main.js": "/AkcjaPamietamy/static/js/main.99a537cf.js",
+    "static/media/Museo-Regular-900.otf": "/AkcjaPamietamy/static/media/Museo-Regular-900.e46db5ed57f8de82387b.otf",
+    "static/media/Museo-Regular-500.otf": "/AkcjaPamietamy/static/media/Museo-Regular-500.e2754d623a1379accfe5.otf",
+    "static/media/Museo-Regular-300.otf": "/AkcjaPamietamy/static/media/Museo-Regular-300.bc42e4fb98594205f713.otf",
+    "static/media/Museo-Regular-100.otf": "/AkcjaPamietamy/static/media/Museo-Regular-100.c9c167ab1144254b0133.otf",
+    "static/media/jozefGrzybek.jpg": "/AkcjaPamietamy/static/media/jozefGrzybek.09e2805053d4bdae552d.jpg",
+    "static/media/Museo-Regular-700.ttf": "/AkcjaPamietamy/static/media/Museo-Regular-700.ff28292d2268c33915a8.ttf",
+    "static/media/blanc.jpg": "/AkcjaPamietamy/static/media/blanc.04043dcd9efe3487d3fc.jpg",
+    "index.html": "/AkcjaPamietamy/index.html",
+    "main.ac07dbf3.css.map": "/AkcjaPamietamy/static/css/main.ac07dbf3.css.map",
+    "main.99a537cf.js.map": "/AkcjaPamietamy/static/js/main.99a537cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac07dbf3.css",
+    "static/js/main.99a537cf.js"
+  ]
+}
