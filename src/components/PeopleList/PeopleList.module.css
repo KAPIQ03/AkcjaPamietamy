@@ -1,65 +1,60 @@
-.bgSearch {
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 	background-color: #ce181e;
-	padding: 0 10% 0 10%;
 	color: #fff;
-	margin: 0;
 	font-size: 150%;
 }
-.peopleCards {
+.search_bar {
+	width: 70%;
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	background: #fff;
+}
+.search_bar__input {
+	flex: 1;
+	border: none;
+	font-size: 1.3rem;
+	font-family: var(--font-raleway);
+	font-weight: 500;
+	padding-right: 1rem;
+	outline: none;
+	color: #757575;
+	background: #fff;
+}
+.search_bar__icon {
+	font-size: 1.3rem;
+	color: #757575;
+}
+.list_of_people {
 	margin: 25px 2%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-.headerSearchBar {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
-.search {
-	width: 70%;
-	margin: 1rem 0 2rem;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	padding: 1.5rem 1.75rem;
-	border-radius: 10px;
-	background: #fff;
-}
-.search input {
-	flex: 1;
-	border: none;
-	font-size: 1.5rem;
-	font-family: var(--font-raleway);
-	font-weight: 500;
-	padding-right: 1rem;
-
-	outline: none;
+.list_of_people--empty {
+	padding: 2rem;
 	color: #757575;
-	background: #fff;
-}
-.search_icon {
-	font-size: 1.5rem;
-	color: #757575;
-}
-a {
-	margin: 0;
+	font-size: 1.3rem;
 }
 
 @media screen and (max-width: 767px) {
-	.headerSearchBar {
-		width: 100%;
+	.header {
+		position: static;
 	}
-	.bgSearch {
-		padding: 0;
-	}
-	.search {
+	.search_bar {
 		padding: 1rem 1.5rem;
 	}
-	.search input,
-	#search-icon {
+	.search_bar__input,
+	.search_bar__icon {
 		font-size: 1.2rem;
 	}
 }

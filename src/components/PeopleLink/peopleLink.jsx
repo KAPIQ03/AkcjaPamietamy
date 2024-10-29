@@ -7,26 +7,30 @@ import styles from './PeopleLink.module.css';
 
 const BackButton = () => {
 	return (
-		<div className={styles.back}>
-			<Link to='/' className={styles.buttonBack}>
+		<nav className={styles.navigation}>
+			<Link to='/' className={styles['navigation__button--back']}>
 				<FaArrowLeft />
-				<span>Powrót</span>
+				<span className={styles['button--back__text']}>Powrót</span>
 			</Link>
-		</div>
+		</nav>
 	);
 };
 
 const Image = props => {
 	return (
-		<div className={styles.center}>
-			<img src={props.image} alt={props.Name} />
+		<div className={styles.first_info__people_image}>
+			<img
+				src={props.image}
+				alt={props.Name}
+				className={styles.people_image__image}
+			/>
 		</div>
 	);
 };
 
 const Name = props => {
 	return (
-		<div className={styles.center}>
+		<div className={styles.first_info__name}>
 			<h1>{props.Name}</h1>
 		</div>
 	);
@@ -34,9 +38,9 @@ const Name = props => {
 
 const Description = props => {
 	return (
-		<div className={styles.textContent}>
-			<p>{props.short_description}</p>
-			<p>{props.long_description}</p>
+		<div className={styles.description}>
+			<p className={styles.description__paragraf}>{props.short_description}</p>
+			<p className={styles.description__paragraf}>{props.long_description}</p>
 		</div>
 	);
 };
@@ -56,7 +60,7 @@ const PeopleLink = () => {
 	const activeHarc = HarcData[id];
 
 	return (
-		<div className={styles.conteiner}>
+		<div className={styles.container}>
 			<BackButton />
 			<div className={styles.firstInfo}>
 				<Image {...activeHarc} />

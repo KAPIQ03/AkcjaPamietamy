@@ -1,10 +1,25 @@
-.peopleCard img {
+.card__image {
 	border-radius: 5px 0 0 5px;
 	height: 100%;
 }
-.peopleCard {
+.description__name {
+	font-size: 1.7rem;
+	margin: 0;
+	padding: 0;
+}
+.card__description {
+	color: #515151;
+	width: 100%;
+	padding: 20px;
+	font-size: 0.9rem;
+}
+.description__paragraph {
+	text-align: justify;
+	margin: 5px 0;
+}
+.card {
 	background-color: #fff;
-	margin: 20px 10px 5px 10px;
+	margin: 1.5rem 0.5rem;
 	border-radius: 5px;
 	outline: 1px solid #7575755a;
 	display: flex;
@@ -12,45 +27,26 @@
 	cursor: pointer;
 	width: 450px;
 	height: 230px;
-	transition: 200ms;
+	transition: 120ms;
 }
-.peopleCard:hover {
-	scale: 1.02;
+.card:hover {
+	scale: 1.04;
 	outline: 2px solid #ce181e;
-}
-.desc {
-	color: #515151;
-	padding: 20px;
-	font-size: 0.9rem;
-}
-.desc p {
-	margin: 5px 0;
-}
-.name h2 {
-	font-size: 1.7rem;
-	margin: 0;
-	padding: 0;
-}
-.info {
-	text-align: justify;
 }
 
 @media screen and (max-width: 767px) {
-	.peopleCard img {
+	.card__image {
 		display: none;
 	}
-	.peopleCard {
-		width: 100%;
-		margin: 2rem 0;
+	.card {
+		width: 90vw;
+		margin: 1rem 0;
 		height: 300px;
 	}
-	.peopleCard h2 {
+	.description__name {
 		text-align: center;
 	}
-	.peopleCards {
-		margin: 1.5rem 1rem;
-	}
-	.desc {
+	.description {
 		padding: 20px;
 		font-size: 0.8rem;
 	}

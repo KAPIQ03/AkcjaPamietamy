@@ -10,26 +10,33 @@ const PeopleList = () => {
 
 	return (
 		<div>
-			<div className={styles.bgSearch}>
-				<div className={styles.headerSearchBar}>
-					<div className={styles.search}>
-						<input
-							placeholder='Wyszukaj...'
-							value={input}
-							onChange={e => setInput(e.target.value)}
-						/>
-						<FaSearch className={styles.search_icon} />
-					</div>
+			<div className={styles.header}>
+				<div className={styles.search_bar}>
+					<input
+						placeholder='Wyszukaj...'
+						value={input}
+						onChange={e => setInput(e.target.value)}
+						className={styles.search_bar__input}
+					/>
+					<FaSearch className={styles.search_bar__icon} />
 				</div>
 			</div>
-			<div className={styles.peopleCards}>
+			<div className={styles.list_of_people}>
 				{HarcData.filter(people =>
 					people.Name.toLowerCase().includes(input.toLowerCase())
-				).map(people => (
-					<Link to={'/' + people.id} key={people.id}>
-						<PeopleCard {...people} />
-					</Link>
-				))}
+				).length > 0 ? (
+					HarcData.filter(people =>
+						people.Name.toLowerCase().includes(input.toLowerCase())
+					).map(people => (
+						<Link to={'/' + people.id} key={people.id}>
+							<PeopleCard {...people} />
+						</Link>
+					))
+				) : (
+					<span className={styles['list_of_people--empty']}>
+						Nie znaleziono takiej osoby
+					</span>
+				)}
 			</div>
 		</div>
 	);

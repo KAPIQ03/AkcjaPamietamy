@@ -2,13 +2,15 @@ import React from 'react';
 import styles from './PeopleCard.module.css';
 
 const Image = props => {
-	return <img src={props.image} alt={props.name} />;
+	return (
+		<img src={props.image} alt={props.name} className={styles.card__image} />
+	);
 };
 
 const Name = props => {
 	return (
-		<div className={styles.name}>
-			<h2>{props.Name}</h2>
+		<div>
+			<h2 className={styles.description__name}>{props.Name}</h2>
 		</div>
 	);
 };
@@ -16,16 +18,16 @@ const Name = props => {
 const Description = props => {
 	const text = props.short_description.slice(0, 300);
 	return (
-		<div className={styles.info}>
-			<p>{text}...</p>
+		<div>
+			<p className={styles.description__paragraph}>{text}...</p>
 		</div>
 	);
 };
 const PeopleCard = person => {
 	return (
-		<div className={styles.peopleCard} key={person.id}>
+		<div className={styles.card} key={person.id}>
 			<Image {...person} />
-			<div className={styles.desc}>
+			<div className={styles.card__description}>
 				<Name {...person} />
 				<Description {...person} />
 			</div>

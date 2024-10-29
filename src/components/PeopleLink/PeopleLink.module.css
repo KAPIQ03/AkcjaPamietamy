@@ -1,29 +1,47 @@
-.buttonBack:visited {
+.navigation__button--back:visited {
 	color: #515151;
 }
-.back {
+.navigation {
 	display: flex;
 	align-items: center;
 	justify-content: start;
 }
-.back * {
+.navigation__button--back * {
 	font-size: 1rem;
 	margin: 0;
 }
-.back span {
+.button--back__text {
 	font-weight: 700;
 	margin-left: 0.7rem;
 	font-size: 1.5rem;
 }
-.buttonBack {
+.navigation__button--back {
 	padding: 1rem;
 	transition: 500ms;
 }
-.buttonBack:hover {
+.navigation__button--back:hover {
 	color: #ce181e;
 }
-img {
+.firstInfo {
+	margin: 1rem 0;
+}
+.first_info__people_image {
+	display: flex;
+	justify-content: center;
+}
+.people_image__image {
 	border-radius: 5px;
+}
+.first_info__name {
+	font-size: 1.5rem;
+	margin: 2rem;
+	text-align: center;
+}
+.description {
+	padding: 0 5% 3rem 5%;
+}
+.description__paragraf {
+	text-align: justify;
 }
 .map {
 	height: 500px;
@@ -31,37 +49,22 @@ img {
 	border: 0;
 	border-radius: 5px;
 }
-.conteiner {
-	padding: 30px 10% 30px 10%;
-}
-p {
-	text-align: justify;
-}
-.textContent {
-	padding: 0 5% 3rem 5%;
-}
-.firstInfo {
-	margin: 3rem 0 1rem;
-}
-.center {
-	display: flex;
-	justify-content: center;
-}
-.firstInfo h1 {
-	font-size: 3rem;
-	margin: 2rem;
-	text-align: center;
+.container {
+	padding: 2rem 10%;
 }
 
 @media screen and (max-width: 767px) {
-	.conteiner h1 {
-		font-size: 2rem;
+	.first_info__name {
+		font-size: 1rem;
 	}
-	.back {
+	.navigation {
 		justify-content: center;
 	}
-	.textContent {
+	.description {
 		padding: 0;
 		margin-bottom: 3rem;
+	}
+	.container {
+		padding: 1rem 5%;
 	}
 }
