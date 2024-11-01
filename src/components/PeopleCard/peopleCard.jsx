@@ -16,13 +16,19 @@ const Name = props => {
 };
 
 const Description = props => {
-	const text = props.short_description.slice(0, 300);
+	let text = '';
+	const desc = props.description.split(' ', 35);
+	desc.forEach(word => {
+		text = text + word + ' ';
+	});
+
 	return (
 		<div>
 			<p className={styles.description__paragraph}>{text}...</p>
 		</div>
 	);
 };
+
 const PeopleCard = person => {
 	return (
 		<div className={styles.card} key={person.id}>

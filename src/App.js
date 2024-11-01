@@ -18,7 +18,7 @@ function App() {
 			</header>
 			<main>
 				<Routes>
-					<Route path='/' element={<List />} />
+					<Route path='/AkcjaPamietamy' element={<List />} />
 					<Route path='/:id' element={<Page />} />
 				</Routes>
 			</main>

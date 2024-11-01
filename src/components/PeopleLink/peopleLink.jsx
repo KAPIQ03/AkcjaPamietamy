@@ -8,7 +8,9 @@ import styles from './PeopleLink.module.css';
 const BackButton = () => {
 	return (
 		<nav className={styles.navigation}>
-			<Link to='/' className={styles['navigation__button--back']}>
+			<Link
+				to='/AkcjaPamietamy/'
+				className={styles['navigation__button--back']}>
 				<FaArrowLeft />
 				<span className={styles['button--back__text']}>Powrót</span>
 			</Link>
@@ -39,8 +41,7 @@ const Name = props => {
 const Description = props => {
 	return (
 		<div className={styles.description}>
-			<p className={styles.description__paragraf}>{props.short_description}</p>
-			<p className={styles.description__paragraf}>{props.long_description}</p>
+			<p className={styles.description__paragraf}>{props.description}</p>
 		</div>
 	);
 };
