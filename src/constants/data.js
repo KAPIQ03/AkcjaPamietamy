@@ -310,4 +310,92 @@ export const HarcData = [
 		location:
 			'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2345.540003045032!2d18.497566076771452!3d53.993189972484025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDU5JzM1LjUiTiAxOMKwMzAnMDAuNSJF!5e0!3m2!1spl!2spl!4v1730414236645!5m2!1spl!2spl',
 	},
+	{
+		id: 39,
+		Name: 'Tadeusz Lange',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},
+	{
+		id: 40,
+		Name: 'phm. Michał Skonieczny',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	}, 
+	{
+		id: 41,
+		Name: 'hm. Mieczysław Szulc',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},  
+	{
+		id: 42,
+		Name: 'hm. Edmund Falkowski',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},  
+	{
+		id: 43,
+		Name: 'hm. Antoni Górski',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	}, 
+	{
+		id: 44,
+		Name: 'hm. Franciszek Piechowski',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},  
+	{
+		id: 45,
+		Name: 'hm. Małgorzata Raszeja – Masiak',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},  
+	{
+		id: 46,
+		Name: 'hm. Jan Wałaszewski',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},  
+	{
+		id: 47,
+		Name: 'hm. Aleksander Lammek',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	}, 
+	{
+		id: 48,
+		Name: 'Wacław Życzyński ',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	},  
+	{
+		id: 49,
+		Name: 'phm. Franciszek Kurowski',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	}, 
+	{
+		id: 50,
+		Name: 'Krystyna Sinicka',
+		image: assets.blanc,
+		description: '',
+		location: '',
+	}, 
+
+	// TODO: uzupełnić listę o nowe osoby, znaleźć ich zdjęcia, opisy i pinezki na mapie
 ];
+
+
